@@ -76,9 +76,9 @@ header {
 
 #banner {
   height: 680px;
-  @media (max-width: $screen-sm-min) {
-    height: 100%;
-  }
+//   @media (max-width: $screen-sm-min) {
+//     height: 100%;
+//   }
   position: relative;
   background-image: url(./../Images/heroBg0.png);
   background-position: center;
@@ -88,9 +88,13 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 4%;
+    @media (max-width: $screen-md-min) {
+      padding-top: 10%;
+    }
     @media (max-width: $screen-sm-min) {
       padding-top: 30%;
     }
+
     .hero-title {
       h3 {
         text-align: center;
@@ -118,8 +122,8 @@ header {
           line-height: normal;
         }
         @media (max-width: $screen-md-min) {
-            padding: 0 70px;
-          }
+          padding: 0 70px;
+        }
       }
     }
     .hero-cta {
@@ -167,15 +171,25 @@ header {
   }
   .wrapper {
     display: flex;
+    @media (max-width: $screen-md-min) {
+      width: auto;
+      padding-right: 0;
+      padding-left: 0;
+    }
     @media (max-width: $screen-sm-min) {
       flex-wrap: wrap;
     }
+    
+
     .thumbnail {
       width: 33.33333333%;
       float: left;
       padding-left: 15px;
       padding-right: 15px;
       padding: 0 30px;
+      @media (max-width: $screen-md-min) {
+        padding: 0 10px;
+      }
       @media (max-width: $screen-sm-min) {
         width: 100%;
       }
@@ -200,8 +214,8 @@ header {
         font-size: 30px;
         color: #303030;
         @media (max-width: $screen-sm-min) {
-            font-size: 26px;
-          }
+          font-size: 26px;
+        }
       }
       .description {
         color: #444;
@@ -230,8 +244,8 @@ header {
         z-index: 1;
         padding: 0 25px;
         @media (max-width: $screen-sm-min) {
-            padding: 0 ;
-          }
+          padding: 0;
+        }
         &:before {
           content: "";
           height: 1px;
@@ -258,9 +272,8 @@ header {
       p {
         margin: 0;
         @media (max-width: $screen-sm-min) {
-            line-height: 1.7rem;
-          }
-        
+          line-height: 1.7rem;
+        }
       }
       .text {
         line-height: 2rem;
@@ -322,9 +335,9 @@ header {
     font-size: 32px;
     color: #707070;
     @media (max-width: $screen-sm-min) {
-        font-size: 28px;
-    margin-bottom: 20px;
-      }
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   }
   .platform-items {
     display: flex;
