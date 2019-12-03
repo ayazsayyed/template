@@ -36,12 +36,6 @@ body img {
   margin-left: auto;
 }
 
-@media (min-width: 750px) {
-  .wrapper {
-    width: 750px;
-  }
-}
-
 @media (min-width: 970px) {
   .wrapper {
     width: 970px;
@@ -219,12 +213,6 @@ header .nav ul.nav-links .nav-link-item:last-child {
   padding: 50px 0;
 }
 
-@media (max-width: 750px) {
-  #services {
-    padding: 30px 0;
-  }
-}
-
 #services .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,12 +298,6 @@ header .nav ul.nav-links .nav-link-item:last-child {
 #testimonial {
   text-align: center;
   padding: 50px 0;
-}
-
-@media (max-width: 750px) {
-  #testimonial {
-    padding: 30px 0;
-  }
 }
 
 #testimonial .wrapper .heading-wrapper {
@@ -448,12 +430,6 @@ header .nav ul.nav-links .nav-link-item:last-child {
   border-bottom: 2px solid #d1d1d1;
 }
 
-@media (max-width: 750px) {
-  #platform {
-    padding: 30px 0;
-  }
-}
-
 #platform .heading {
   margin: 0 0 40px 0;
   font-weight: 500;
@@ -478,6 +454,8 @@ header .nav ul.nav-links .nav-link-item:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px 0;
 }
 
@@ -495,6 +473,7 @@ header .nav ul.nav-links .nav-link-item:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80px;
 }
 
 #platform .platform-items .item .name {
@@ -559,6 +538,14 @@ footer .wrapper .copyright {
 @media (max-width: 750px) {
   footer .wrapper .copyright {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  #platform,
+  #testimonial,
+  #services {
+    padding: 30px 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
